@@ -51,7 +51,7 @@ TasteNex is a modern, fast, and user-friendly recipe finder platform where users
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/TasteNex.git
+git clone https://github.com/shanicodes-star/TasteNex_recipeFinder.git
 cd TasteNex
 Open index.html in any modern web browser.
 
@@ -83,5 +83,6 @@ Visit the portfolio here: Exyton Solutions
 
 License
 MIT License © 2025 Exyton Solutions (shaniCodes-start)
+
 
 TasteNex © 2025 | Developed by Exyton Solutions (shaniCodes-start)
