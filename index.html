@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TasteNex",
+  "url": "https://your-site-url.com/",
+  "description": "TasteNex is a modern recipe finder offering thousands of recipes including breakfast, lunch, dinner, desserts, and snacks.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Exyton Solutions"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://your-site-url.com/?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Title -->
+  <title>TasteNex - Best Recipe Finder | Search 1000+ Recipes Instantly</title>
+
+  <!-- SEO Description -->
+  <meta name="description"
+    content="TasteNex is a modern recipe finder where you can search, explore and filter 1000+ recipes instantly. Find breakfast, dinner, desserts, traditional dishes, quick snacks & more.">
+
+  <!-- SEO Keywords -->
+  <meta name="keywords"
+    content="recipe finder, food recipes, cooking, breakfast recipes, dinner recipes, dessert recipes, Pakistani food, Indian recipes, quick snacks, TasteNex recipes">
+
+  <!-- Author -->
+  <meta name="author" content="Exyton Solutions - Shayan Khan (ShanCodes-star)">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://your-site-url.com/">
+
+  <!-- Open Graph Tags (For WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:title" content="TasteNex - Recipe Finder">
+  <meta property="og:description"
+    content="Discover thousands of recipes with TasteNex. Search, explore and cook your favorite meals with ease.">
+  <meta property="og:image" content="TasteNex Logo.png">
+  <meta property="og:url" content="https://your-site-url.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TasteNex - Recipe Finder">
+  <meta name="twitter:description"
+    content="Search and explore thousands of recipes from around the world. Instant results, clean design, fast loading.">
+  <meta name="twitter:image" content="TasteNex Logo.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="TasteNex Logo.png" type="image/x-icon">
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  <div id="navbarContainer"></div>
+
+  <!-- Hero -->
+  <div id="heroContainer"></div>
+
+  <!-- Recipe Results -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row" id="recipeResults">
+        <!-- Recipe cards will load here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="our-story py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left: Text -->
+        <div class="col-md-6">
+          <h2 class="mb-3" style="color: #ff6347;">Our Story TasteNex</h2>
+          <p>
+            TasteNex began with a very basic concept: making it easier for people to find great recipes
+            from all over the world. Our site allows easy access to finding recipes,
+            enabling searches based on ingredients, cuisine, or category. Whether you are a novice or an experienced
+            Experienced chef TasteNex boasts thousands of carefully selected recipes with step-by-step preparation
+            methods
+            and tips on making it fun and easy. Be a part of our food loving community and discover
+            endless culinary possibilities with TasteNex.
+          </p>
+          <p>
+            Our mission is to inspire home cooks to try new dishes, improve their cooking skills, and
+            enjoy the art of food. From quick weeknight meals to gourmet delicacies, TasteNex helps
+            you bring flavor, creativity, and joy to your kitchen every day.
+          </p>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-md-6 text-center">
+          <img src="Our-Stroy Image.jpg" alt="Our Story TasteNex" class="img-fluid rounded shadow">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Include Footer -->
+  <div id="footerContainer"></div>
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Load Navbar
+    $("#navbarContainer").load("navbar.html");
+    // Include Footer
+    $(document).ready(function () {
+      $("#footerContainer").load("footer.html");
+    });
+    // Load Hero and then start main script
+    $("#heroContainer").load("hero.html", function () {
+      $.getScript("script.js");
+    });
+  </script>
+
+</body>
+
+</html>
