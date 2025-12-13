@@ -372,6 +372,9 @@ body {
   .card-box{
     padding:25px;
   }
+  #dc-head{
+    display:none;
+  }
 }
 .exyton-btn {
     display: flex;
@@ -514,3 +517,4 @@ body {
     max-width: 100%;
     border-radius: 15px;
 }
+
